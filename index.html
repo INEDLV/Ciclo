@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		:root {
+	--celeste: #3176e3;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 0px;
+	 z-index: 1000;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--celeste);
+	font-size: 40px;
+	width: 68%;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	text-align: left;
+	z-index: 1000;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+ul, ol {
+				list-style:none;
+	 			z-index: 1000;
+}
+			
+			.nav {
+				width:100%; /*Le establecemos un ancho*/
+				margin: auto; /*Centramos automaticamente*/
+				font-size: 20px;
+			}
+
+			.nav > li {
+				float:left;		
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:inline-block;
+				min-width: 100%;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+				min-width:230px;
+
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+		display: inline-block;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+}
+
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+
+    
+}
+
+	</style>
+	<title>SGA INED</title>
+</head>
+<body>
+
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">Sistema de Gestión Académica INED</h2>
+			
+			<nav class="nav">
+        <ul class="nav">
+
+            
+
+<!------------------------------------------------------------Ingreso------------------------------------------------>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="#" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> CICLO ESCOLAR <img src="assets/arrow.svg" class="list__arrow"></a>
+                    
+                </div>
+
+		<!---------------------------------------Unidades--------------------------------->
+            <ul class="list__show">
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://sgained-becbf.firebaseapp.com/" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> 2024</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/M25/" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> 2025</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/M26/" class="nav__link">
+                    	<img src="assets/docs.svg" class="list__img"> 2026</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/M27/" class="nav__link"> 
+                    	<img src="assets/docs.svg" class="list__img"> 2027</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/M28/" class="nav__link"> 
+                    	<img src="assets/docs.svg" class="list__img"> 2028</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/M29/" class="nav__link"> 
+                    	<img src="assets/docs.svg" class="list__img"> 2029</a>
+                </div>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <a href="https://inedlv.github.io/M30/" class="nav__link"> 
+                    	<img src="assets/docs.svg" class="list__img"> 2030</a>
+                </div>
+
+            </li>
+        </ul>
+
+
+        </ul>
+        </ul>
+    </nav>
+		</div>
+	</header>
+	<main>
+		<div>
+			<iframe name="iframe1" src="file:///C:/Users/ebero/Documents/SGA%20INED%20Nuevo/Inicio/index.html"> </iframe>
+		</div>
+		
+	</main>
+	
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
